@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Butterfly</title>
+    <style type="text/css">
+    p {color: rgb(95, 88, 89); 
+    font-style: bold;
+    line-height:150%;
+    text-indent: 25px;
+    background-color: black; 
+    }
+    h2 {color: rgb(221, 63, 161);
+    font-style: oblique;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top-color: blue;
+    border-top-width: 4px;
+    border-top-style: dashed;
+    border-bottom-color: blueviolet;
+    border-bottom-style: groove;
+    border-bottom-width: 6px;
+    height: 50%;
+    width: 100%;
+    
+    }
+    ol {font: weight bolder;
+    color: brown;
+    }
+    table {color: rgb(236, 27, 37);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(203, 209, 200);}
+    a:visited {color: chocolate}
+    a:hover {background-color: darkgoldenrod;
+    color: aliceblue;
+    text-decoration: underline;
+    font-weight: bold;
+    
+    }
+    td {border: 2px dashed red}
+    tr {background-color: seagreen}
+    ol {list-style-type: katakana; color: black;}
+    span {font-weight: bolder;}
+    .red {color: chartreuse;}
+    .free {color: rgb(231, 49, 17);}
+    .glue {color: darkmagenta;}
+    #balance {border: 2px solid red; position: absolute; top: 15px; left: 25px; color: red;}
+    p > a {color: darkred;
+    font-size: 50px;
+    
+    }
+    h2 > a {color: darkturquoise;
+    font-size: 80px;
+    }
+    p:first-letter {font-weight: bolder;
+    font-size: 30px;
+    color: green;
+    
+    }
+    
+    body {
+    color:black;
+    background-size: 100%;
+    background-image: url(data:image/jpeg;base64,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)
+    
+    }
+
+    </style>
+</head>
+<body>
+    <h2><a href="http://youtube.com">YOUTUBE</a>CONSERVATION</h2>
+    <P class="red"><strong>part of this, <span>acquired 80% of the equity</span> share capital of Bodegas
+        limited (“Bodegas”) on January 1, 2015 when the retained earnings of
+        Bodegas was N93.75 million. <a href="http://google.com">GOOGLE</a> the share acquisition, AdeLabs had
+        control over Bodegas – no shares have been issued by Bodegas following the
+        acquisition on January 1, 2015. The non-controlling interest in Bodegas was
+        measured at its fair value of <strong>million</strong> at the date of acquisition.</strong></P>
+        <P class="glue">On January 1, 2016, AdeLabs acquired 50% of the equity share capital of
+            ChidePlastics limited (“ChidePlast”) when the retained earnings of
+            ChidePlast was N41.25 million. This acquisition was classified as a joint
+            venture in accordance with IFRS 11 Joint Arrangements.
+        <h2>PERVASIVE</h2>
+        <p class="free">On January 1, 2016, AdeLabs acquired 50% of the equity share capital of
+            <a href="http://earthsbirthday.org/butterflies/butterfly-facts-links/">ChidePlastics</a> limited (“ChidePlast”) when the retained earnings of
+            ChidePlast was N41.25 million. This acquisition was classified as a joint
+            venture in accordance with IFRS 11 Joint Arrangements. ChidePlast has not
+            issued any shares since the acquisition date.</p><a href="http://facebook.com">FACEBOOK</a>
+            <ol>
+                <li>Abbreviation</li>
+                <li>Roman cat</li>
+                <li>Bad omen</li>
+            </ol>
+        </div>
+        <table border="3" cellspacing="5" cellpadding="10%">
+            <tr>
+                <th colspan="2"><h2>FONTER</h2></th>
+            <tr>
+                <th>BAT</th>
+                <th>BODY</th>
+            </tr>
+            <tr>
+                <td>Cooker but thru the data</td>
+                <td>School but the garden is through these</td>
+            </tr>
+            <tr>
+                <td>Cooker</td>
+                <td>School</td>
+            </tr>
+        </table>
+        <div>
+        <img src="http://www3.canisius.edu/~grandem/butterflylifecycle/Puzzle%20Picture.jpg">
+    </div>
+            
+    <div>The balance on “other reserves” relates to movements in the values of
+                investments in Bodegas and ChidePlast in the books of AdeLabs</div>
+
+                <form>
+                    USERNAME: <input type="text" name="username" value="Enter username here" />
+                    <br/>
+                    male: <input type="radio" name="sex" value="male" />
+                    female: <input type="radio" name="sex" value="female" />
+                    <br/>
+                    <p>please select type of phones you want.</p>
+                    HTC <input type="checkbox" name="food" value="HTC" />
+                    Blackberry <input type="checkbox" name="food" value="Blackberry" />
+                    Iphone <input type="checkbox" name="food" value="Iphone"/>
+                    Samsung <input type="checkbox" name="food" value="Samsung"/>
+                </form>
+
+
+                    What do you want to do today
+                <select name="activities">
+                    <option value="play">play the guitar</option>
+                    <option value="play">play the keyboard</option>
+                    <option value="play">play the drums</option>
+                    <option value="play">play the saxophone</option>
+
+                </select>
+                Tell me about you
+                <br/>
+                
+                <textarea name="Bio" rows="8" cols="40">
+                    Type something here
+
+                </textarea>
+password: <input type="password" name="pword"/>
+<p>Now submit a file</p>
+<input type="file" name="tommyfile" />
+           
+
+
+                    </form>
+
+
+                
+                
+</body>
+</html>
